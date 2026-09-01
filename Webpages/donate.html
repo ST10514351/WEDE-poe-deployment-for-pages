@@ -29,7 +29,7 @@
             <h2>Make a donation</h2>
             <h2>Forms</h2>
   
-            <form action="/submit" method="POST">
+            <form action="/submit" method="POST"> <!--Form for donating-->
                 <fieldset>
                     <legend>Personal Information</legend>
                     
@@ -44,27 +44,32 @@
                 </fieldset>
         
                 <fieldset>
-                    <legend>Preferences</legend>
+                    <legend>Donation</legend>
                     
-                    <label for="country">Country:</label>
+                    <label for="don">Desired donation amount:</label>
                     <select id="country" name="country">
-                        <option value="za">South Africa</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="us">United States</option>
+                        <option value="za">R500</option>
+                        <option value="uk">R1000</option>
+                        <option value="uk">R10000</option>
+                        <option value="us">Custom amount</option>
+                    </select>
+
+                    <label for="prio">What would you like to prioritize?</label>
+                    <select id="prio" name="prio">
+                        <option value="House">Housing</option>
+                        <option value="Food">Food</option>
+                        <option value="Rehab">Rehab</option>
+                        <option value="Learn">Learnerships</option>
                     </select>
                     
-                    <p>Preferred Contact Method:</p>
-                    <input type="radio" name="contact" value="email" id="contact-email">
-                    <label for="contact-email">Email</label>
-                    <input type="radio" name="contact" value="phone" id="contact-phone">
-                    <label for="contact-phone">Phone</label>
+                
                 </fieldset>
         
-                <button type="submit">Submit</button>
+                <button type="submit">Donate</button>
             </form>
         </section>
 
-        <section>
+        <section> <!--Reassurance that donations are taken seriously-->
             <h3>Donation to Impact</h3>
             <ol>
                 <li>
