@@ -1,0 +1,46 @@
+Every donation gets an answer
+In the live dashboard, each donation will use a unique reference number and contribute to a public ledger that can be refered to at any point
+
+We strive to be transperent and prove that we have the best interest of those we promise to help
+
+Make a donation
+
+Forms
+Personal Information
+Full Name: 
+ Email Address: 
+ Phone Number: 
+
+Donation
+Desired donation amount: 
+- R500
+- R1000
+- R10000
+- Custom Amount
+
+What would you like to prioritize? 
+- Housing
+- Food
+- Rehab
+- Learnerships
+
+Donate button
+
+Donation to Impact
+Payment
+A secure payment to our trusted accounts
+
+Reference
+A unique reference is provided for both bookkeeping and evidence of your selflessness
+
+Allocation
+Funds are allocated based on the total revenue split and what you as the donor requested
+
+Reporting
+The total amount spent and impact updates to the dashboard on a weekly basis
+
+© 2026 New Beginnings Foundation. All rights reserved.
+
+Follow us on our socialmedia
+Terms of Service
+Back to Top
