@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="home.html">Go to home page</a>
+            <a href="about.html">Got to about page</a>
+            <a href="donate.html">Got to donate page</a>
+            <a href="contact.html">Got to contact page</a>
+            <a href="feedback.html">Got to feedback page</a>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <h3>Any feedback on our mission is helpful</h3>
+            <p>Please take the time to fill out the below form highlighting any feedback
+                you may have for us, whether good or bad. Here at New Beginnings Foundation we strive to be for the people
+            </p>
+
+            <p>Feedback is of course anonymous, feel free to speak your mind</p>
+        </section>
+
+        <section>
+            <h4>Feedback form</h4>
+            <form action="/register" method="POST">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="country">Type of feedback:</label>
+  <select id="country" name="country">
+    <option value="za">Positive</option>
+    <option value="uk">Constructive Criticism</option>
+    <option value="us">United States</option>
+  </select>
+
+  <fieldset>
+    <legend>Gender</legend>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Choose Your Interests</legend>
+    <input type="checkbox" name="interests" value="coding" id="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" name="interests" value="music" id="music">
+    <label for="music">Music</label>
+  </fieldset>
+
+  <label for="bio">Bio:</label>
+  <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+
+  
+
+  <button type="submit">Register</button>
+</form>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2026 New Beginnings Foundation. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="/privacy">Follow us on our socialmedia</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+        <li><a href="#top">Back to Top</a></li>
+      </ul>
+    </nav>
+    </footer>
+</body>
+    
+</html>
