@@ -40,3 +40,21 @@ The goal was also to define our project specs and thoroughly determine who we ar
 **Disclosure of AI use**
 - AI was used in this assignment for the creation of the logo and colour scheme as noted in the New Beginnings Foundation official PDF document within the subfolders category
 
+**Changelog**
+- In accordance with feedback received from Part 1 of the assignment this section of the READMe file will accommodate the changes made throughout the project, as well as any subsequent improvements.
+
+**Part 2 - CSS**
+1. (2026/09/13 - 2026/10/05)
+ *Main HTML Content*
+- The main HTML content of the pages has been revised. Part of the feedback was that there was nowhere near enough content to populate the page, leading to poor use of semantic HTML tags. This update has addressed both of the above.
+- More substance has been added to the website to make it more realistic. The focus was on diction and the hierarchy of information, allowing for a professional appeal and an intuitive reading experience for visitors
+- Added active-page navigation using aria-current="page"
+- Improved page titles, metadata and heading structure
+- The information has been sectioned off in blocks to allow for the implementation of classes for the CSS requirement
+- - Many of the CSS tags found throughout the document allow for multiple items across all pages to be designed simultaneously
+  - Tag names were kept as simple as possible, but for more nuanced features the goal was to make it entirely specific so there is always a reference to which feature it is talking to
+
+- *Still to do*
+- I still have to create the stylesheet and input the necessary designs
+- The pages are still missing working images
+- Guaranteeing the responsiveness of the page
