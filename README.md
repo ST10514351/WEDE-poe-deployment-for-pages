@@ -58,3 +58,16 @@ The goal was also to define our project specs and thoroughly determine who we ar
 - I still have to create the stylesheet and input the necessary designs
 - The pages are still missing working images
 - Guaranteeing the responsiveness of the page
+
+2. (2026/09/20 - 2026/10/05)
+   *CSS document*
+- CSS document has been added.
+- Partial AI assistance for styling of forms and tables, as well as the current page aria-label
+- Multiple pseudo-classes used
+- @media queries for page responsiveness have been added, accommodated for more common resolutions
+- Multiple individual CSS elements have been altered for a more professional feel
+
+- *Still to do*
+- Collapse the navigation into a burger menu or a cleaner variation of what it is now
+- Optimize image loading
+- Reduce size of stylesheet
