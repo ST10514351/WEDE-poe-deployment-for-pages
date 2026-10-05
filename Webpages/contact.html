@@ -1,87 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Contact New Beginnings Foundation for donations, volunteering, collaboration opportunities or general enquiries.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Contact Us | New Beginnings Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <section>
-            <img src="C:\Users\Kamogelo\OneDrive - ADvTECH Ltd\WEDE\New Beginnings Foundation - POE\Subfolders\Feedback\Logo.png" height="200" width="300px">
-            <a href="home.html">Go to home page</a>
-            <a href="about.html">Go to about page</a>
-            <a href="donate.html">Go to donate page</a>
-            <a href="contact.html">Go to contact page</a>
-            <a href="feedback.html">Go to feedback page</a>
-        </section>
+
+
+<body id="top">
+
+
+    <!--Header-->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-link">
+
+            <img
+                src="images/logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+
+        </a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
     </header>
 
     <main>
-        <section>
-            <h3>How to contact the team</h3>
-            <p>Fill out the form below and we will refer back as soon as we can!</p>
+
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Contact us
+                </p>
+
+                <h1>
+                    How to contact the team
+                </h1>
+
+            </div>
+
+            <p>
+                Whether you would like to donate, volunteer,
+                collaborate or simply ask a question, our team
+                would like to hear from you.
+            </p>
+
+            <p>
+                Complete the form below and we will get back to you
+                as soon as possible.
+            </p>
+
         </section>
 
-        <section> <!--Form for contact-->
-            <form action="/register" method="POST">
+        <!--Contact Options-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Get involved
+                </p>
+
+                <h2>
+                    Reasons to contact us
+                </h2>
+
+            </div>
+
+
+            <div class="card-grid">
+
+
+                <article class="card">
+
+                    <h3>
+                        Private Donation
+                    </h3>
+
+                    <p>
+                        Contact the team if you would like to discuss
+                        a private donation or require more information
+                        before contributing.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Collaboration
+                    </h3>
+
+                    <p>
+                        Businesses, organisations and individuals can
+                        contact us about future partnerships and
+                        collaboration opportunities.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Volunteer
+                    </h3>
+
+                    <p>
+                        If you would like to contribute your time,
+                        skills or experience, contact us about
+                        volunteering opportunities.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--Contact form-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Send us a message
+                </p>
+
+                <h2>
+                    Contact form
+                </h2>
+            </div>
+
+            <form class="site-form" action="/register" method="POST">
+
+                <!-- Personal information -->
                 <fieldset>
-                    <legend>Contact Information</legend>
 
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <legend>
+                        Contact Information
+                    </legend>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="form-group">
+
+                        <label for="contact-name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contact-name"
+                            name="name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="contact-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="contact-email"
+                            name="email"
+                            required>
+                    </div>
                 </fieldset>
 
+                <!-- Reason for enquiry -->
                 <fieldset>
-                    <legend>Gender</legend>
-                    <input type="radio" name="gender" value="male" id="male">
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" value="female" id="female">
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" value="other" id="other">
-                    <label for="other">Other</label>
+
+                    <legend>
+                        Reason for enquiry
+                    </legend>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="enquiry-donation"
+                            name="enquiry"
+                            value="private-donation"
+                            required>
+
+                        <label for="enquiry-donation">
+                            Private Donation
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="enquiry-collaboration"
+                            name="enquiry"
+                            value="collaboration">
+
+                        <label for="enquiry-collaboration">
+                            Future Collaboration
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="enquiry-volunteer"
+                            name="enquiry"
+                            value="volunteer">
+
+                        <label for="enquiry-volunteer">
+                            Volunteer
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="enquiry-general"
+                            name="enquiry"
+                            value="general">
+
+                        <label for="enquiry-general">
+                            General Enquiry
+                        </label>
+
+                    </div>
                 </fieldset>
 
+                <!-- Who recieves -->
                 <fieldset>
-                    <legend>reason for enquiry</legend>
-                    <input type="checkbox" name="interests" value="private" id="private">
-                    <label for="private">Private Donation</label>
-                    <input type="checkbox" name="interests" value="collab" id="collab">
-                    <label for="collab">Future Collaboration</label>
-                    <input type="checkbox" name="interests" value="volunteer" id="volunteer">
-                    <label for="volunteer">Volunteer</label>
+
+                    <legend>
+                        Who would you like to receive this message?
+                    </legend>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="recipient-team"
+                            name="recipient"
+                            value="foundation-team"
+                            required>
+
+                        <label for="recipient-team">
+                            New Beginnings Foundation Team
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="recipient-management"
+                            name="recipient"
+                            value="management">
+
+                        <label for="recipient-management">
+                            Management
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="recipient-website"
+                            name="recipient"
+                            value="website-team">
+
+                        <label for="recipient-website">
+                            Website Team
+                        </label>
+
+                    </div>
+
                 </fieldset>
 
-                <fieldset>
-                    <legend>Who would you like to see this message?</legend>
-                    <input type="checkbox" name="person" value="private" id="private">
-                    <label for="private">Website programmers</label>
-                    <input type="checkbox" name="person" value="collab" id="collab">
-                    <label for="collab">New Beginnings Foundation Team</label>
-                    <input type="checkbox" name="person" value="volunteer" id="volunteer">
-                    <label for="volunteer">Management</label>
-                </fieldset>
+                <!-- Message -->
+                <div class="form-group">
 
-                <label for="feedback">Type reason for contacting here:</label>
-                <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+                    <label for="contact-message">
+                        Message
+                    </label>
 
-                <button type="submit">Submit</button>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="6"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Send Message
+                </button>
+
             </form>
         </section>
+
+        <!--Other ways to help-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Other ways to support us
+                </p>
+
+                <h2>
+                    You do not have to contact us to make a difference
+                </h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Donate
+                    </h3>
+
+                    <p>
+                        Make a direct contribution towards the
+                        foundation's programmes.
+                    </p>
+
+                    <a href="donate.html" class="primary-button">
+                        Donate Now
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Learn More
+                    </h3>
+
+                    <p>
+                        Read about the foundation, our founder and
+                        the mission behind our work.
+                    </p>
+
+                    <a href="about.html" class="secondary-button">
+                        About Us
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Share Feedback
+                    </h3>
+
+                    <p>
+                        Tell us how the organisation and website
+                        can improve.
+                    </p>
+
+                    <a href="feedback.html" class="secondary-button">
+                        Give Feedback
+                    </a>
+
+                </article>
+            </div>
+        </section>
+
+        <!--Final Message-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Every conversation can lead to change
+                </h2>
+
+            </div>
+
+            <p>
+                Whether you want to donate, volunteer, collaborate
+                or simply learn more, reaching out is one way to
+                become part of the New Beginnings Foundation mission.
+            </p>
+
+        </section>
     </main>
-    
-    <footer>
-    <p>&copy; 2026 New Beginnings Foundation. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="/privacy">Follow us on our socialmedia</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-        <li><a href="#top">Back to Top</a></li>
-      </ul>
-    </nav>
+
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+
+                <img
+                    src="images/logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+
+        </div>
     </footer>
 </body>
+
 </html>

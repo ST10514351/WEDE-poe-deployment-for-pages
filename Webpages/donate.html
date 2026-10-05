@@ -1,112 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Support New Beginnings Foundation by making a donation towards housing, food, rehabilitation and employment opportunities.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Donate | New Beginnings Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <section>
-            <img src="C:\Users\Kamogelo\OneDrive - ADvTECH Ltd\WEDE\New Beginnings Foundation - POE\Subfolders\Feedback\Logo.png" height="200" width="300px">
-            <a href="home.html">Go to home page</a>
-            <a href="about.html">Go to about page</a>
-            <a href="donate.html">Go to donate page</a>
-            <a href="contact.html">Go to contact page</a>
-            <a href="feedback.html">Go to feedback page</a>
-        </section>
+
+<body id="top">
+
+
+    <!--Header-->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-link">
+
+            <img
+                src="images/logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+
+        </a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html" aria-current="page">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
+
     </header>
 
     <main>
-        <section>
-            <h3>Every donation gets an answer</h3>
-            <p>In the live dashboard, each donation will use a unique reference number
-                and contribute to a public ledger that can be refered to at any point
+
+
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Make a difference
+                </p>
+
+                <h1>
+                    Every donation can help create a new beginning
+                </h1>
+            </div>
+
+            <p>
+                Your contribution can help provide shelter, food,
+                rehabilitation support and opportunities for people
+                working towards a more stable future.
             </p>
-            <p>We strive to be transperent and prove that we have the best interest of those we promise to help</p>
+
+            <p>
+                Every contribution matters, regardless of its size.
+            </p>
+
         </section>
 
-        <section>
-            <h2>Make a donation</h2>
-            <h2>Forms</h2>
-  
-            <form action="/submit" method="POST"> <!--Form for donating-->
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone">
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Donation</legend>
-                    
-                    <label for="don">Desired donation amount:</label>
-                    <select id="country" name="country">
-                        <option value="za">R500</option>
-                        <option value="uk">R1000</option>
-                        <option value="uk">R10000</option>
-                        <option value="us">Custom amount</option>
-                    </select>
 
-                    <label for="prio">What would you like to prioritize?</label>
-                    <select id="prio" name="prio">
-                        <option value="House">Housing</option>
-                        <option value="Food">Food</option>
-                        <option value="Rehab">Rehab</option>
-                        <option value="Learn">Learnerships</option>
-                    </select>
-                    
-                
+<!--Donation transperancy-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Transparency
+                </p>
+
+                <h2>
+                    Every donation gets an answer
+                </h2>
+            </div>
+
+            <p>
+                New Beginnings Foundation aims to be transparent about
+                how donations are used.
+            </p>
+
+            <p>
+                Each donation can be linked to a unique reference and
+                allocated towards the areas where support is needed.
+            </p>
+
+            <p>
+                Donors can also indicate which area they would prefer
+                their contribution to support.
+            </p>
+
+        </section>
+
+
+
+        <!--Donation Total-->
+        <section class="content-section donation-total">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Community support
+                </p>
+
+                <h2>
+                    Donations received
+                </h2>
+
+            </div>
+
+            <p>
+                Current demonstration total
+            </p>
+
+            <strong>
+                R209 768
+            </strong>
+
+            <p class="note">
+                This amount is currently demonstration data and can
+                later be connected to a live donation system.
+            </p>
+
+        </section>
+
+
+
+        <!--Donation form-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Support the foundation
+                </p>
+
+                <h2>
+                    Make a donation
+                </h2>
+            </div>
+
+            <form class="site-form" action="/submit" method="POST">
+
+                <!-- Personal information -->
+                <fieldset>
+
+                    <legend>
+                        Personal Information
+                    </legend>
+
+                    <div class="form-group">
+
+                        <label for="donor-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="donor-name"
+                            name="name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="donor-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="donor-email"
+                            name="email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="donor-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="donor-phone"
+                            name="phone">
+
+                    </div>
                 </fieldset>
-        
-                <button type="submit">Donate</button>
+
+                <!-- Donation amount -->
+                <fieldset>
+
+                    <legend>
+                        Donation Details
+                    </legend>
+
+
+                    <div class="form-group">
+
+                        <label for="donation-amount">
+                            Donation Amount
+                        </label>
+
+                        <select
+                            id="donation-amount"
+                            name="donation-amount"
+                            required>
+
+                            <option value="">
+                                Select an amount
+                            </option>
+
+                            <option value="500">
+                                R500
+                            </option>
+
+                            <option value="1000">
+                                R1 000
+                            </option>
+
+                            <option value="5000">
+                                R5 000
+                            </option>
+
+                            <option value="10000">
+                                R10 000
+                            </option>
+
+                            <option value="custom"> 
+                                Custom Amount
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group"> <!--Connected to JavaScript, should show up only if custom amount is clicked-->
+
+                        <label for="custom-amount">
+                            Custom Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="custom-amount"
+                            name="custom-amount"
+                            min="1"
+                            placeholder="Enter amount in Rand">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="donation-priority">
+                            What would you like to prioritise?
+                        </label>
+
+                        <select
+                            id="donation-priority"
+                            name="donation-priority"
+                            required>
+
+                            <option value="">
+                                Select a priority
+                            </option>
+
+                            <option value="housing">
+                                Housing
+                            </option>
+
+                            <option value="food">
+                                Food and Essentials
+                            </option>
+
+                            <option value="rehabilitation">
+                                Rehabilitation
+                            </option>
+
+                            <option value="employment">
+                                Employment and Learnerships
+                            </option>
+
+                            <option value="general">
+                                Where it is needed most
+                            </option>
+
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Optional message -->
+                <div class="form-group">
+
+                    <label for="donation-message">
+                        Message or Note
+                    </label>
+
+                    <textarea
+                        id="donation-message"
+                        name="donation-message"
+                        rows="5"
+                        placeholder="Optional message"></textarea>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Donate
+                </button>
             </form>
         </section>
 
-        <section> <!--Reassurance that donations are taken seriously-->
-            <h3>Donation to Impact</h3>
-            <ol>
-                <li>
-                    <b>Payment</b>
-                    <p>A secure payment to our trusted accounts</p>
-                </li>
+        <!--Donation -> Impact -->
+        <section class="content-section">
 
-                <li>
-                    <b>Reference</b>
-                    <p>A unique reference is provided for both bookkeeping and evidence of your selflessness</p>
-                </li>
+            <div class="section-heading">
 
-                <li>
-                    <b>Allocation</b>
-                    <p>Funds are allocated based on the total revenue split and what you as the donor requested</p>
-                </li>
+                <p class="eyebrow">
+                    Donation to impact
+                </p>
 
-                <li>
-                    <b>Reporting</b>
-                    <p>The total amount spent and impact updates to the dashboard on a weekly basis</p>
-                </li>
-            </ol>
+                <h2>
+                    How your donation is handled
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+                <article class="card">
+
+                    <h3>
+                        1. Payment
+                    </h3>
+
+                    <p>
+                        A secure contribution is made to the
+                        foundation.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        2. Reference
+                    </h3>
+
+                    <p>
+                        The donation is linked to a unique reference
+                        for record keeping and transparency.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        3. Allocation
+                    </h3>
+
+                    <p>
+                        Funds are allocated towards the foundation's
+                        programmes and the donor's selected priority.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        4. Reporting
+                    </h3>
+
+                    <p>
+                        The foundation aims to provide regular updates
+                        showing how contributions are being used.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <!--What we do with donations-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Your contribution
+                </p>
+
+                <h2>
+                    What donations can support
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Housing
+                    </h3>
+
+                    <p>
+                        Support towards temporary or subsidised
+                        accommodation.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Food and Essentials
+                    </h3>
+
+                    <p>
+                        Food, toiletries, clothing and other everyday
+                        necessities.
+                    </p>
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Rehabilitation
+                    </h3>
+
+                    <p>
+                        Support for people working towards recovery
+                        and sobriety.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Employment
+                    </h3>
+
+                    <p>
+                        Skills development, learnerships and support
+                        towards employment opportunities.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!--Donor Leaderboard-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Community recognition
+                </p>
+
+                <h2>
+                    Top donors
+                </h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Demonstration donor leaderboard
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">
+                                Rank
+                            </th>
+
+                            <th scope="col">
+                                Donor
+                            </th>
+
+                            <th scope="col">
+                                Amount
+                            </th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Timmothy</td>
+                            <td>R120 000</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Thabo</td>
+                            <td>R66 756</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Charlene</td>
+                            <td>R23 012</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="note">
+                The leaderboard currently contains demonstration data.
+            </p>
+
+        </section>
+
+        <!--CTA-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Every contribution matters
+                </p>
+
+                <h2>
+                    Help someone move towards a better future
+                </h2>
+            </div>
+
+            <p>
+                Your support can help someone access the resources,
+                stability and opportunities needed to begin again.
+            </p>
+
+            <div class="button-group">
+
+                <a href="#donation-amount" class="primary-button">
+                    Make a Donation
+                </a>
+
+                <a href="contact.html" class="secondary-button">
+                    Ask a Question
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer>
-    <p>&copy; 2026 New Beginnings Foundation. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="/privacy">Follow us on our socialmedia</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-        <li><a href="#top">Back to Top</a></li>
-      </ul>
-    </nav>
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+
+                <img
+                    src="images/logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+        </div>
     </footer>
 </body>
-
 
 </html>

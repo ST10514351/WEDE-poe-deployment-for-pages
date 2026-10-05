@@ -1,104 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A comprehensive example of semantic HTML structure">
-  <title>New Beginnings Foundation</title>
-  
 
-</head>
-<body>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="New Beginnings Foundation is a South African non-profit organisation helping homeless people access shelter, rehabilitation, food and employment opportunities.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Home | New Beginnings Foundation</title>
+</header>
 
-  <header>
-    <section> <!--Header with anvigation bar-->
-     <img src="C:\Users\Kamogelo\OneDrive - ADvTECH Ltd\WEDE\New Beginnings Foundation - POE\Subfolders\Feedback\Logo.png" height="200" width="300px">
-      <a href="home.html">Go to home page</a>
-      <a href="about.html">Go to about page</a>
-      <a href="donate.html">Go to donate page</a>
-      <a href="contact.html">Go to contact page</a>
-      <a href="feedback.html">Go to feedback page</a>
-    </section>
-    <!--Make a table with the total donations, make up names, origin story, mission statement-->
-    <section>
-      <h1>New Beginnings Foundation</h1>
-      <h2>Helping Today, Building Tomorrow, changing Lives</h2>
-    </section>
-  </header>
 
-  <main>
-    <section>
-      <h2>Existing for the people</h2>
-      <p>Here at New Beginnings Foundation we prioritize the well being of each and every South African</p>
-      <p>We exist purely to help those who can no longer help themselves.</p>
-      <p>Make a change. Donate today</p>
-    </section>
+<body id="top">
 
-    <section>
-      <img src="C:\Users\Kamogelo\OneDrive - ADvTECH Ltd\WEDE\New Beginnings Foundation - POE\homeless.jpg" alt="Homeless person" width="200" height="300">
-    </section>
-    <section>
-      <p>200 000 total homeless</p>
-      <p>60 million total South Africans.</p>
-      <p>We can make a change</p>
+    <!--Header section-->
+    <header class="site-header">
 
-      <h3>Meet our top donators</h3> <!--Table for top donors-->
-      <table>
-        <caption>Top Donor Ranking</caption>
-        <thead>
-          <tr>
-            <th scope="col">Donor</th>
-            <th scope="col">Amount</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Timmothy</th>
-            <td>R120 000</td>
-          </tr>
-          <tr>
-            <th scope="row">Thabo</th>
-            <td>R66,756</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th scope="row">Charlene</th>
-            <td>R23,012</td>
-          </tr>
-        </tfoot>
-      </table>
-      
-      <h3>Where donations go</h3> <!--Section for reassurance-->
-      <ul>
-        <li>Subsidized housing through New Beginnings Foundation</li>
-        <li>Rehabilitation efforts</li>
-        <li>Clothing/toiletries/food</li>
-      </ul>
-    <section>
+        <a href="home.html" class="logo-link">
+            <img
+                src="images/logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+        </a>
 
-    <section>
-      <h3>Every journey is different, everyone deserves a second chance</h3>
-    </section>
+        <nav class="main-navigation" aria-label="Main navigation">
 
-    <section>
-      <h3>Steps to a better life</h3>
-      <p>Accept where you are</p>
-      <p>Visualise where you want to be</p>
-      <p>Push to achieve your new dream</p>
-    </section>
-  </main>
+            <ul>
+                <li>
+                    <a href="home.html" aria-current="page"> <!--Allows for styling of current page highlight-->
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-  <footer> <!--Footer for contact info-->
-    <p>&copy; 2026 New Beginnings Foundation. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="/privacy">Follow us on our socialmedia</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-        <li><a href="#top">Back to Top</a></li>
-      </ul>
-    </nav>
-  </footer>
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
 
+    </header>
+
+    <main>
+        <!--Hero-->
+
+        <section class="content-section hero">
+
+            <div>
+                <p class="eyebrow">New Beginnings Foundation</p>
+
+                <h1>Helping Today. Building Tomorrow. Changing Lives.</h1>
+
+                <p>
+                    Homelessness is a circumstance, not an identity.
+                    New Beginnings Foundation exists to help people
+                    rebuild their lives through support, dignity and
+                    opportunity.
+                </p>
+
+                <div class="button-group">
+
+                    <a href="donate.html" class="primary-button">
+                        Make a Donation
+                    </a>
+
+                    <a href="about.html" class="secondary-button">
+                        Learn Our Story
+                    </a>
+                </div>
+
+            </div>
+
+            <img
+                src="images/homeless.jpg"
+                alt="A person experiencing homelessness"
+                class="content-image">
+
+        </section>
+
+        <!--Main mission/goal-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">Why we exist</p>
+
+                <h2>Existing for the people</h2>
+
+            </div>
+
+            <p>
+                Here at New Beginnings Foundation, we prioritise the
+                wellbeing and dignity of every person we assist.
+            </p>
+
+            <p>
+                We exist to support people who are struggling to rebuild
+                their lives and help them move towards stability,
+                employment and independence.
+            </p>
+
+            <p>
+                Our purpose is not only to provide short-term relief,
+                but to help people create a better future.
+            </p>
+
+            <a href="about.html" class="secondary-button">
+                Learn More About Us
+            </a>
+
+        </section>
+
+        <!--Impact-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow"> <!--Small text above heading-->
+                    The challenge
+                </p>
+
+                <h2>Homelessness affects everyone</h2>
+
+                <p>
+                    Stronger communities are created when people work
+                    together to support those who need help.
+                </p>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>200 000+</h3>
+                    <p>People estimated to be experiencing homelessness.</p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>60 million+</h3>
+                    <p>
+                        South Africans who can contribute towards
+                        stronger communities.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>1 Goal</h3>
+
+                    <p>Give people the opportunity to begin again.</p>
+
+                </article>
+
+
+            </div>
+        </section>
+
+        <!--Donation transperancy (where it goes/how its spent)-->
+        <section class="content-section">
+
+            <div class="section-heading">
+                <p class="eyebrow"> <!--For transperancy from this point on the tags have an extra line-->
+                    Your support matters
+                </p>
+
+                <h2>
+                    Where donations go
+                </h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card"> <!--Meant to look like "bubbles" containing the info-->
+
+                    <h3>
+                        Housing
+                    </h3>
+
+                    <p>
+                        Support towards temporary and subsidised
+                        accommodation.
+                    </p>
+
+                </article>
+
+                <article class="card">
+                    <h3>
+                        Food and Essentials
+                    </h3>
+
+                    <p>
+                        Food, clothing, toiletries and other basic
+                        necessities.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>
+                        Rehabilitation
+                    </h3>
+
+                    <p>
+                        Support for individuals working towards recovery
+                        and stability.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>
+                        Employment
+                    </h3>
+
+                    <p>
+                        Helping people prepare for employment and access
+                        opportunities.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <!--Company transperancy-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Transparency
+                </p>
+
+                <h2>
+                    Every donation deserves an answer
+                </h2>
+
+            </div>
+
+            <p>
+                One of the main goals of New Beginnings Foundation is to
+                show donors where their contributions are being used.
+            </p>
+
+            <p>
+                Donations can be directed towards areas such as housing,
+                food, rehabilitation and learnership opportunities.
+            </p>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        1. Donate
+                    </h3>
+
+                    <p>
+                        Choose how much you would like to contribute.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        2. Allocate
+                    </h3>
+
+                    <p>
+                        Funds are directed towards foundation programmes
+                        and priorities.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        3. Report
+                    </h3>
+
+                    <p>
+                        The foundation aims to provide regular updates
+                        showing how funds have been used.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <a href="donate.html" class="primary-button">
+                See How Donations Work
+            </a>
+
+        </section>
+
+        <!--Cumulative Donation Total-->
+        <section class="content-section donation-total">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Community support
+                </p>
+
+                <h2>
+                    Together, every contribution adds up
+                </h2>
+
+            </div>
+
+            <p>
+                Current demonstration total:
+            </p>
+
+            <strong>
+                R209 768
+            </strong>
+
+            <a href="donate.html" class="primary-button">
+                Add Your Contribution
+            </a>
+
+        </section>
+
+        <!--Donor leaderboard-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Community recognition
+                </p>
+
+                <h2>
+                    Meet our top donors
+                </h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Donor Leaderboard
+                    </caption>
+
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Donor</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Timmothy</td>
+                            <td>R120 000</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Thabo</td>
+                            <td>R66 756</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Charlene</td>
+                            <td>R23 012</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!--Second Chance Plea-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    A new beginning
+                </p>
+
+                <h2>
+                    Every journey is different.
+                    Everyone deserves a second chance.
+                </h2>
+
+            </div>
+
+            <p>
+                A difficult period does not have to define someone's
+                entire life. With support and opportunity, people can
+                rebuild their confidence and independence.
+            </p>
+        </section>
+
+        <!--Steps to a better life-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Moving forward
+                </p>
+
+                <h2>
+                    Steps to a better life
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        1. Accept where you are
+                    </h3>
+
+                    <p>
+                        Understanding your current circumstances is the
+                        first step towards change.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        2. Visualise where you want to be
+                    </h3>
+
+                    <p>
+                        Setting goals creates direction and gives people
+                        something to work towards.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        3. Work towards your new beginning
+                    </h3>
+
+                    <p>
+                        Support, consistency and opportunity can help
+                        turn a goal into a sustainable future.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- Get Involved -->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Get involved
+                </p>
+
+                <h2>
+                    Be part of someone's new beginning
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Donate
+                    </h3>
+
+                    <p>
+                        Help fund the programmes that support people
+                        rebuilding their lives.
+                    </p>
+
+                    <a href="donate.html" class="primary-button">
+                        Donate
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Volunteer
+                    </h3>
+
+                    <p>
+                        Offer your time, skills or experience to support
+                        the organisation.
+                    </p>
+
+                    <a href="contact.html" class="secondary-button">
+                        Contact Us
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Give Feedback
+                    </h3>
+
+                    <p>
+                        Help us understand how the organisation and
+                        website can improve.
+                    </p>
+
+                    <a href="feedback.html" class="secondary-button">
+                        Give Feedback
+                    </a>
+
+                </article>
+            </div>
+        </section>
+
+        <!--CTA-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    Help someone start again
+                </h2>
+
+            </div>
+
+            <p>
+                Your contribution can support shelter, food,
+                rehabilitation and employment opportunities.
+            </p>
+
+            <a href="donate.html" class="primary-button">
+                Donate Today
+            </a>
+        </section>
+    </main>
+
+    <!--Footer section-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+                <img
+                    src="images/logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <section>
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>

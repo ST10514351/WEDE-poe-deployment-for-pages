@@ -1,66 +1,1001 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Share feedback with New Beginnings Foundation and help us improve our organisation, website and services.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Feedback | New Beginnings Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <section>
-            <img src="C:\Users\Kamogelo\OneDrive - ADvTECH Ltd\WEDE\New Beginnings Foundation - POE\Subfolders\Feedback\Logo.png" height="200" width="300px">
-            <a href="home.html">Go to home page</a>
-            <a href="about.html">Go to about page</a>
-            <a href="donate.html">Go to donate page</a>
-            <a href="contact.html">Go to contact page</a>
-            <a href="feedback.html">Go to feedback page</a>
-        </section>
+
+<body id="top">
+
+
+    <!--Header-->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-link">
+
+            <img
+                src="images/logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+        </a>
+
+
+        <nav class="main-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html" aria-current="page">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
     </header>
 
     <main>
-        <section>
-            <h3>Any feedback on our mission is helpful</h3>
-            <p>Please take the time to fill out the below form highlighting any feedback
-                you may have for us, whether good or bad. Here at New Beginnings Foundation we strive to be for the people
+
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Your opinion matters
+                </p>
+
+                <h1>
+                    Help us improve
+                </h1>
+
+            </div>
+
+            <p>
+                Any feedback on our mission, website or organisation
+                can help New Beginnings Foundation improve.
             </p>
 
-            <p>Feedback is of course anonymous, feel free to speak your mind</p>
+            <p>
+                Whether your experience has been positive or you
+                believe something could be done better, we welcome
+                constructive and honest feedback.
+            </p>
         </section>
 
-        <section>
-            <h4>Feedback form</h4>
-            <form action="/register" method="POST">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
 
-  <label for="country">Type of feedback:</label>
-  <select id="country" name="country">
-    <option value="za">Positive</option>
-    <option value="uk">Constructive Criticism</option>
-  </select>
+<!--Why feedback matters-->
+        <section class="content-section">
 
-  
-  <p> </p>
-  <label for="bio">Type feedback here:</label>
-  <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+            <div class="section-heading">
 
-  
+                <p class="eyebrow">
+                    Why we ask
+                </p>
 
-  <button type="submit">Register</button>
-</form>
+                <h2>
+                    Feedback helps us grow
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Improve the website
+                    </h3>
+
+                    <p>
+                        Tell us if information is difficult to find,
+                        confusing or missing from the website.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Improve our services
+                    </h3>
+
+                    <p>
+                        Suggestions can help us understand what people
+                        need and where the organisation can improve.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Understand our supporters
+                    </h3>
+
+                    <p>
+                        Feedback helps us understand what donors,
+                        volunteers and community members value most.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--Feedback Form-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Share your thoughts
+                </p>
+
+                <h2>
+                    Feedback form
+                </h2>
+
+            </div>
+
+            <form class="site-form" action="/register" method="POST">
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="feedback-name">
+                        Name or Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="feedback-name"
+                        name="name"
+                        placeholder="Optional">
+
+                </div>
+
+                <!-- Feedback type -->
+                <div class="form-group">
+
+                    <label for="feedback-type">
+                        Type of feedback
+                    </label>
+
+                    <select
+                        id="feedback-type"
+                        name="feedback-type"
+                        required>
+
+                        <option value="">
+                            Select feedback type
+                        </option>
+
+                        <option value="positive">
+                            Positive Feedback
+                        </option>
+
+                        <option value="constructive">
+                            Constructive Criticism
+                        </option>
+
+                        <option value="website">
+                            Website Suggestion
+                        </option>
+
+                        <option value="service">
+                            Service Suggestion
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Feedback topic -->
+                <fieldset>
+
+                    <legend>
+                        What is your feedback about?
+                    </legend>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-website"
+                            name="feedback-topic"
+                            value="website"
+                            required>
+
+                        <label for="topic-website">
+                            Website
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-donations"
+                            name="feedback-topic"
+                            value="donations">
+
+                        <label for="topic-donations">
+                            Donations
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-services"
+                            name="feedback-topic"
+                            value="services">
+
+                        <label for="topic-services">
+                            Foundation Services
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-general"
+                            name="feedback-topic"
+                            value="general">
+
+                        <label for="topic-general">
+                            General Feedback
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <!-- Feedback message -->
+                <div class="form-group">
+
+                    <label for="feedback-message">
+                        Your feedback
+                    </label>
+
+                    <textarea
+                        id="feedback-message"
+                        name="feedback-message"
+                        rows="7"
+                        placeholder="Type your feedback here..."
+                        required></textarea>
+                </div>
+
+                <!-- Anonymous option -->
+                <div class="form-group">
+
+                    <input
+                        type="checkbox"
+                        id="anonymous-feedback"
+                        name="anonymous"
+                        value="yes">
+
+                    <label for="anonymous-feedback">
+                        Submit this feedback anonymously
+                    </label>
+
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Submit Feedback
+                </button>
+            </form>
+        </section>
+
+        <!--Guidelines-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Helpful feedback
+                </p>
+
+                <h2>
+                    What makes feedback useful?
+                </h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Be specific
+                    </h3>
+
+                    <p>
+                        Explain what you liked, disliked or believe
+                        could be improved.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Be constructive
+                    </h3>
+
+                    <p>
+                        Suggestions are most useful when they explain
+                        how something could be improved.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Be honest
+                    </h3>
+
+                    <p>
+                        Honest feedback gives us a clearer understanding
+                        of how people experience the foundation.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <!--Other ways to get involved-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Stay involved
+                </p>
+
+                <h2>
+                    There are more ways to support the foundation
+                </h2>
+
+            </div>
+
+            <div class="button-group">
+
+                <a href="donate.html" class="primary-button">
+                    Make a Donation
+                </a>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+
+            </div>
         </section>
     </main>
 
-    <footer>
-    <p>&copy; 2026 New Beginnings Foundation. All rights reserved.</p>
-    <nav aria-label="Footer navigation">
-      <ul>
-        <li><a href="/privacy">Follow us on our socialmedia</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-        <li><a href="#top">Back to Top</a></li>
-      </ul>
-    </nav>
+
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+
+                <img
+                    src="images/logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+
+        </div>
     </footer>
 </body>
-    
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Share feedback with New Beginnings Foundation and help us improve our organisation, website and services.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Feedback | New Beginnings Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="top">
+
+
+    <!--Header-->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-link">
+
+            <img
+                src="images/logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+        </a>
+
+
+        <nav class="main-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html" aria-current="page">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
+    </header>
+
+    <main>
+
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Your opinion matters
+                </p>
+
+                <h1>
+                    Help us improve
+                </h1>
+
+            </div>
+
+            <p>
+                Any feedback on our mission, website or organisation
+                can help New Beginnings Foundation improve.
+            </p>
+
+            <p>
+                Whether your experience has been positive or you
+                believe something could be done better, we welcome
+                constructive and honest feedback.
+            </p>
+        </section>
+
+
+<!--Why feedback matters-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Why we ask
+                </p>
+
+                <h2>
+                    Feedback helps us grow
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Improve the website
+                    </h3>
+
+                    <p>
+                        Tell us if information is difficult to find,
+                        confusing or missing from the website.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Improve our services
+                    </h3>
+
+                    <p>
+                        Suggestions can help us understand what people
+                        need and where the organisation can improve.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Understand our supporters
+                    </h3>
+
+                    <p>
+                        Feedback helps us understand what donors,
+                        volunteers and community members value most.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+
+
+        <!--Feedback Form-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Share your thoughts
+                </p>
+
+                <h2>
+                    Feedback form
+                </h2>
+
+            </div>
+
+            <form class="site-form" action="/register" method="POST">
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="feedback-name">
+                        Name or Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="feedback-name"
+                        name="name"
+                        placeholder="Optional">
+
+                </div>
+
+                <!-- Feedback type -->
+                <div class="form-group">
+
+                    <label for="feedback-type">
+                        Type of feedback
+                    </label>
+
+                    <select
+                        id="feedback-type"
+                        name="feedback-type"
+                        required>
+
+                        <option value="">
+                            Select feedback type
+                        </option>
+
+                        <option value="positive">
+                            Positive Feedback
+                        </option>
+
+                        <option value="constructive">
+                            Constructive Criticism
+                        </option>
+
+                        <option value="website">
+                            Website Suggestion
+                        </option>
+
+                        <option value="service">
+                            Service Suggestion
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Feedback topic -->
+                <fieldset>
+
+                    <legend>
+                        What is your feedback about?
+                    </legend>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-website"
+                            name="feedback-topic"
+                            value="website"
+                            required>
+
+                        <label for="topic-website">
+                            Website
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-donations"
+                            name="feedback-topic"
+                            value="donations">
+
+                        <label for="topic-donations">
+                            Donations
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-services"
+                            name="feedback-topic"
+                            value="services">
+
+                        <label for="topic-services">
+                            Foundation Services
+                        </label>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input
+                            type="radio"
+                            id="topic-general"
+                            name="feedback-topic"
+                            value="general">
+
+                        <label for="topic-general">
+                            General Feedback
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <!-- Feedback message -->
+                <div class="form-group">
+
+                    <label for="feedback-message">
+                        Your feedback
+                    </label>
+
+                    <textarea
+                        id="feedback-message"
+                        name="feedback-message"
+                        rows="7"
+                        placeholder="Type your feedback here..."
+                        required></textarea>
+                </div>
+
+                <!-- Anonymous option -->
+                <div class="form-group">
+
+                    <input
+                        type="checkbox"
+                        id="anonymous-feedback"
+                        name="anonymous"
+                        value="yes">
+
+                    <label for="anonymous-feedback">
+                        Submit this feedback anonymously
+                    </label>
+
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Submit Feedback
+                </button>
+            </form>
+        </section>
+
+        <!--Guidelines-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Helpful feedback
+                </p>
+
+                <h2>
+                    What makes feedback useful?
+                </h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Be specific
+                    </h3>
+
+                    <p>
+                        Explain what you liked, disliked or believe
+                        could be improved.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Be constructive
+                    </h3>
+
+                    <p>
+                        Suggestions are most useful when they explain
+                        how something could be improved.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Be honest
+                    </h3>
+
+                    <p>
+                        Honest feedback gives us a clearer understanding
+                        of how people experience the foundation.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <!--Other ways to get involved-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Stay involved
+                </p>
+
+                <h2>
+                    There are more ways to support the foundation
+                </h2>
+
+            </div>
+
+            <div class="button-group">
+
+                <a href="donate.html" class="primary-button">
+                    Make a Donation
+                </a>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+
+                <img
+                    src="images/logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+
+        </div>
+    </footer>
+</body>
 </html>
