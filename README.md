@@ -40,6 +40,29 @@ The goal was also to define our project specs and thoroughly determine who we ar
 **Disclosure of AI use**
 - AI was used in this assignment for the creation of the logo and colour scheme as noted in the New Beginnings Foundation official PDF document within the subfolders category
 
+For **Part 2** of the project we had to take the feedback we have received and improve on our HTML content. Then once ready we implement the CSS and responsiveness of the website. The requirement was to link one CSS file to all 5 pages and have shared ids throughout to demonstrate our understanding of the cascading nature of the language.
+
+For my submission the feedback I have received was that the content of the pages was lacking, leaving the website bare. This also led to me not being able to demonstrate my understanding of semantic HTML tags. So for this part I had to improve my HTML, add more content and tags in my coding, and add more changes to support my proposed CSS additions.
+The task also specifies website responsiveness, which is defined as a website's ability to display content differently for devices with their own unique resolutions (e.g. Tablets, Desktop and Mobile Phones) using @media tags in the stylesheet.
+My design had this in mind by keeping everything within blocks, which allows for simple reshuffling and stacking of content as the display changes.
+
+
+**Responsiveness Screenshots**
+1. *Website*
+
+
+   <img width="1920" height="1080" alt="Screenshot 2026-10-05 213508" src="https://github.com/user-attachments/assets/38b37b3c-c3db-4ea7-9fd6-dcc752359541" />
+
+2. *Tablet*
+
+
+   <img width="1123" height="996" alt="Screenshot 2026-10-05 213534" src="https://github.com/user-attachments/assets/a80820c8-a2ed-4caf-b3a7-954812243beb" />
+
+3. *Mobile Phone*
+
+
+   <img width="742" height="1015" alt="Screenshot 2026-10-05 213554" src="https://github.com/user-attachments/assets/fafa7c31-7fc5-4581-b1cb-c3b37196a5a6" />
+
 **Changelog**
 - In accordance with feedback received from Part 1 of the assignment this section of the READMe file will accommodate the changes made throughout the project, as well as any subsequent improvements.
 
@@ -48,9 +71,10 @@ The goal was also to define our project specs and thoroughly determine who we ar
  *Main HTML Content*
 - The main HTML content of the pages has been revised. Part of the feedback was that there was nowhere near enough content to populate the page, leading to poor use of semantic HTML tags. This update has addressed both of the above.
 - More substance has been added to the website to make it more realistic. The focus was on diction and the hierarchy of information, allowing for a professional appeal and an intuitive reading experience for visitors
-- Added active-page navigation using aria-current="page"
+- Because of the nature of the NPO, heavy emphasis was added to the CTA, which reminds users to always donate
+- Added active-page navigation using aria-current="page" (Highlights the page you are on in the nav bar)
 - Improved page titles, metadata and heading structure
-- The information has been sectioned off in blocks to allow for the implementation of classes for the CSS requirement
+- The information has been sectioned off in blocks to allow for the implementation of classes for the CSS requirement as well as easy responsiveness implementation
 - - Many of the CSS tags found throughout the document allow for multiple items across all pages to be designed simultaneously
   - Tag names were kept as simple as possible, but for more nuanced features the goal was to make it entirely specific so there is always a reference to which feature it is talking to
 
@@ -58,3 +82,14 @@ The goal was also to define our project specs and thoroughly determine who we ar
 - I still have to create the stylesheet and input the necessary designs
 - The pages are still missing working images
 - Guaranteeing the responsiveness of the page
+
+2. (2026/09/20 - 2026/10/05)
+   *CSS document*
+- CSS document has been added.
+- Partial AI assistance for styling of forms and tables, as well as the current page aria-label
+- Multiple pseudo-classes used
+- @media queries for page responsiveness have been added, accommodated for more common resolutions
+- Multiple individual CSS elements have been altered for a more professional feel (many times opted to design specific tags individually instead of fully)
+
+
+
