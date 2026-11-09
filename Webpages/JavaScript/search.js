@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: "Home",       url: "home.html",     keywords: "home welcome mission homelessness statistics how it works impact stories" },
         { title: "About Us",   url: "about.html",    keywords: "about us founder story vision mission values team rehab programs job offers" },
         { title: "Donate",     url: "donate.html",   keywords: "donate donation give money support amount R500 R1000 housing food rehabilitation employment payment" },
+        { title: "Enquire",    url: "enquiry.html",  keywords: "question volunteer ask enquire time give back support money "},
         { title: "Contact",    url: "contact.html",  keywords: "contact volunteer collaboration enquiry email phone message management team large donation" },
         { title: "Feedback",   url: "feedback.html", keywords: "feedback suggestion complaint review comment positive constructive criticism anonymous" }
     ];

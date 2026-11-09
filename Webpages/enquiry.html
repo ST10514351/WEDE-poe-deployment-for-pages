@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Enquire about volunteering or sponsoring a person, programme or placement with New Beginnings Foundation and find out the cost and availability.">
+    <meta name="author" content="New Beginnings Foundation">
+    <title>Enquiries | New Beginnings Foundation</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/search.js" defer></script>
+    <script src="JavaScript/animations.js" defer></script>
+</head>
+
+<body id="top">
+
+
+    <!--Header-->
+    <header class="site-header">
+
+        <a href="home.html" class="logo-link">
+
+            <img
+                src="../Subfolders/About/Logo.png"
+                alt="New Beginnings Foundation logo"
+                class="site-logo">
+
+        </a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+
+            <ul>
+                <li>
+                    <a href="home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="donate.html">
+                        Donate
+                    </a>
+                </li>
+                <li>
+                    <a href="enquiry.html" aria-current="page">
+                        Enquire
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="feedback.html">
+                        Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="donate.html" class="primary-button">
+            Donate Now
+        </a>
+    </header>
+
+    <main>
+
+        <!--Introduction-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Enquiries
+                </p>
+
+                <h1>
+                    Volunteer or sponsor a new beginning
+                </h1>
+
+            </div>
+
+            <p>
+                Want to know what it costs to sponsor a person through
+                rehabilitation, or whether we need volunteers right now?
+                Complete the enquiry form below and we will show you the
+                cost, current availability and what happens next.
+            </p>
+
+            <p>
+                Looking to send us a general message instead?
+                Visit the <a href="contact.html">Contact page</a>.
+            </p>
+
+        </section>
+
+        <!--Enquiry Options-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    How you can help
+                </p>
+
+                <h2>
+                    What you can enquire about
+                </h2>
+
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Volunteer
+                    </h3>
+
+                    <p>
+                        Give your time and skills to our outreach,
+                        rehabilitation and job-readiness programmes.
+                        Volunteering is free and training is provided.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Sponsor a Person
+                    </h3>
+
+                    <p>
+                        Cover the monthly cost of one person's housing,
+                        rehabilitation or employment support from their
+                        first day until they are job-ready.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Sponsor a Placement
+                    </h3>
+
+                    <p>
+                        Fund a learnership or job placement so that
+                        someone leaving our programme has a guaranteed
+                        opportunity waiting for them.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--Costs and availability-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Costs and availability
+                </p>
+
+                <h2>
+                    Current options
+                </h2>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Volunteer and sponsorship options
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Option</th>
+                            <th scope="col">Cost</th>
+                            <th scope="col">Places available</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Volunteer</td>
+                            <td>Free</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Sponsor a person: housing</td>
+                            <td>R4 000 per month</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Sponsor a person: rehabilitation</td>
+                            <td>R3 500 per month</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Sponsor a placement: employment</td>
+                            <td>R2 500 per month</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p class="note">
+                The costs and availability shown are currently
+                demonstration data and can later be connected to a
+                live system.
+            </p>
+
+        </section>
+
+        <!--Enquiry form-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Make an enquiry
+                </p>
+
+                <h2>
+                    Enquiry form
+                </h2>
+
+            </div>
+
+            <!-- Replace the action with your own form endpoint (e.g. Formspree) when JavaScript is added -->
+            <form id="enquiry-form" class="site-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+                <!-- Personal information -->
+                <fieldset>
+
+                    <legend>
+                        Your Details
+                    </legend>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="enquiry-name"
+                            name="name"
+                            minlength="2"
+                            maxlength="60"
+                            pattern="[A-Za-z][A-Za-z\s'\-]+"
+                            title="Letters, spaces, hyphens and apostrophes only"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="enquiry-email"
+                            name="email"
+                            maxlength="100"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="enquiry-phone"
+                            name="phone"
+                            placeholder="e.g. 0821234567"
+                            pattern="(\+27|0)[0-9]{9}"
+                            title="A South African number, e.g. 0821234567 or +27821234567"
+                            required>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- Enquiry details -->
+                <fieldset>
+
+                    <legend>
+                        Enquiry Details
+                    </legend>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-type">
+                            What would you like to enquire about?
+                        </label>
+
+                        <select
+                            id="enquiry-type"
+                            name="enquiry-type"
+                            required>
+
+                            <option value="">
+                                Select an option
+                            </option>
+
+                            <option value="volunteer">
+                                Volunteer
+                            </option>
+
+                            <option value="sponsor-housing">
+                                Sponsor a person: housing
+                            </option>
+
+                            <option value="sponsor-rehabilitation">
+                                Sponsor a person: rehabilitation
+                            </option>
+
+                            <option value="sponsor-employment">
+                                Sponsor a placement: employment
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-quantity">
+                            How many people or places?
+                        </label>
+
+                        <input
+                            type="number"
+                            id="enquiry-quantity"
+                            name="quantity"
+                            min="1"
+                            max="20"
+                            step="1"
+                            value="1"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-duration">
+                            How long would you like to commit for?
+                        </label>
+
+                        <select
+                            id="enquiry-duration"
+                            name="duration"
+                            required>
+
+                            <option value="">
+                                Select a period
+                            </option>
+
+                            <option value="3">
+                                3 months
+                            </option>
+
+                            <option value="6">
+                                6 months
+                            </option>
+
+                            <option value="12">
+                                12 months
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="enquiry-date">
+                            Preferred start date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="enquiry-date"
+                            name="start-date"
+                            required>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- Optional message -->
+                <div class="form-group">
+
+                    <label for="enquiry-message">
+                        Additional Information
+                    </label>
+
+                    <textarea
+                        id="enquiry-message"
+                        name="message"
+                        rows="5"
+                        maxlength="500"
+                        placeholder="Optional: tell us about your skills, company or any questions"></textarea>
+
+                </div>
+
+                <!-- Confirmation -->
+                <div class="form-group">
+
+                    <input
+                        type="checkbox"
+                        id="enquiry-confirm"
+                        name="confirm"
+                        value="yes"
+                        required>
+
+                    <label for="enquiry-confirm">
+                        I understand this is an enquiry and not a commitment.
+                    </label>
+
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Submit Enquiry
+                </button>
+
+            </form>
+        </section>
+
+        <!--Response (hidden until the enquiry has been processed)-->
+        <section id="enquiry-response" class="content-section highlight-section" aria-live="polite" hidden>
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Our response
+                </p>
+
+                <h2>
+                    Thank you for your enquiry
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3 id="response-title"></h3>
+
+                <p id="response-cost"></p>
+
+                <p id="response-availability"></p>
+
+                <p id="response-next"></p>
+
+            </div>
+
+        </section>
+
+        <!--Other ways to help-->
+        <section class="content-section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Other ways to support us
+                </p>
+
+                <h2>
+                    Prefer to talk to someone?
+                </h2>
+            </div>
+
+            <div class="card-grid">
+
+                <article class="card">
+
+                    <h3>
+                        Contact the Team
+                    </h3>
+
+                    <p>
+                        Send a general message to the foundation, or
+                        discuss a larger private donation.
+                    </p>
+
+                    <a href="contact.html" class="primary-button">
+                        Contact Us
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Donate
+                    </h3>
+
+                    <p>
+                        Make a direct contribution towards the
+                        foundation's programmes.
+                    </p>
+
+                    <a href="donate.html" class="secondary-button">
+                        Donate Now
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>
+                        Learn More
+                    </h3>
+
+                    <p>
+                        Read about the foundation, our founder and
+                        the mission behind our work.
+                    </p>
+
+                    <a href="about.html" class="secondary-button">
+                        About Us
+                    </a>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!--Final Message-->
+        <section class="content-section highlight-section">
+
+            <div class="section-heading">
+
+                <h2>
+                    One enquiry can start a new beginning
+                </h2>
+
+            </div>
+
+            <p>
+                Every volunteer hour and every sponsored place gives
+                someone the chance to rebuild their life with dignity.
+            </p>
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <section>
+
+                <img
+                    src="../Subfolders/About/Logo.png"
+                    alt="New Beginnings Foundation logo"
+                    class="site-logo">
+
+                <p>
+                    Helping today. Building tomorrow.
+                    Changing lives.
+                </p>
+
+            </section>
+
+            <nav class="footer-navigation" aria-label="Footer navigation">
+
+                <h2>
+                    Quick Links
+                </h2>
+
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="donate.html">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="enquiry.html">
+                            Enquiry
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            Feedback
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+
+                <h2>
+                    Get Involved
+                </h2>
+
+                <p>
+                    Want to volunteer, collaborate or learn more about
+                    the foundation?
+                </p>
+
+                <a href="contact.html" class="secondary-button">
+                    Contact Our Team
+                </a>
+
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 New Beginnings Foundation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">
+                Back to Top
+            </a>
+
+        </div>
+    </footer>
+</body>
+
+</html>
