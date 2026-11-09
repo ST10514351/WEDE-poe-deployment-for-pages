@@ -96,4 +96,9 @@ My design had this in mind by keeping everything within blocks, which allows for
 -  W3Schools, n.d. *Accessibility Labels* [Online] Available at: https://www.w3schools.com/accessibility/accessibility_labels.php [Accessed: 02 October 2026]
 -  W3Schools, n.d. *CSS_Tables* [online] Available at: https://www.w3schools.com/css/css_table.asp [Accessed: 05 October 2026]
 
-
+3. (2026/10/05 - 2026/11/09)
+   *Feedback for Part 3*
+- CSS was well implemented and the website had a consistent styling and feel throughout
+- The project structure needs to be reviewed and improved into a clearer organizational hierarchy. It is essential to ensure that all file paths remain functional after restructuring
+- Expand interactive CSS beyond the standard hover and focus implementations
+- Perform final testing across mobile, tablet and web to confirm all responsive layouts behave consistently
