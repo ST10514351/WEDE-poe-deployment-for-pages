@@ -627,3 +627,104 @@ tbody tr:hover {
         height: 320px;
     }
 }
+
+/* ===== Accordion (FAQ) ===== */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    border: none;
+    background-color: var(--gray);
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: var(--border-color);
+}
+
+.accordion-header::after {
+    content: "+";
+    font-size: 1.5rem;
+    color: var(--green);
+    transition: transform 0.3s ease;
+}
+
+.accordion-header[aria-expanded="true"]::after {
+    transform: rotate(45deg);
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.accordion-panel p {
+    padding: 15px 20px 20px;
+}
+
+
+/*transitions styling*/
+/* animations.js adds .reveal (hidden) then .visible (shown) as items scroll into view (Claude AI, 2026)*/ 
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Visitors who prefer less motion still get a gentle fade, just no sliding */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transform: none;
+        transition: opacity 0.5s ease;
+    }
+    .card,
+    .accordion-panel,
+    .accordion-header::after {
+        transition: none;
+    }
+}
+
+/* Always show everything when printing */
+@media print {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
