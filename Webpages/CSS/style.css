@@ -728,3 +728,7 @@ tbody tr:hover {
         transition: none;
     }
 }
+
+/* Styling for form errors */
+.error-message { color:#b00020; font-size:.85rem; }
+.site-form .invalid { border-color:#b00020; }
