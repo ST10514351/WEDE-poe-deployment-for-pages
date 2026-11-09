@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 1. The pages that can be found. Keywords edited here.
     const pages = [
-        { title: "Home",       url: "home.html",     keywords: "home welcome mission homelessness statistics how it works impact stories" },
+        { title: "Home",       url: "index.html",     keywords: "home welcome mission homelessness statistics how it works impact stories" },
         { title: "About Us",   url: "about.html",    keywords: "about us founder story vision mission values team rehab programs job offers" },
         { title: "Donate",     url: "donate.html",   keywords: "donate donation give money support amount R500 R1000 housing food rehabilitation employment payment" },
         { title: "Enquire",    url: "enquiry.html",  keywords: "question volunteer ask enquire time give back support money "},
