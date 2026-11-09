@@ -91,5 +91,9 @@ My design had this in mind by keeping everything within blocks, which allows for
 - @media queries for page responsiveness have been added, accommodated for more common resolutions
 - Multiple individual CSS elements have been altered for a more professional feel (many times opted to design specific tags individually instead of fully)
 
+**Updated References**
+-  OpenAI, 2026. ChatGPT [Large language model]. Available at: https://chatgpt.com/ [Accessed: 04 October 2026]
+-  W3Schools, n.d. *Accessibility Labels* [Online] Available at: https://www.w3schools.com/accessibility/accessibility_labels.php [Accessed: 02 October 2026]
+-  W3Schools, n.d. *CSS_Tables* [online] Available at: https://www.w3schools.com/css/css_table.asp [Accessed: 05 October 2026]
 
 
